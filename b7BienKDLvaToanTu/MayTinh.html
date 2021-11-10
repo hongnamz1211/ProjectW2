@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <style>
+        table {
+            border: 2px solid;
+            padding: 20px;
+            border-radius: 10%;
+            background-color: silver;
+        }
+        input {
+            border-radius: 20%;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+        }
+        input:hover {
+            background-color: slategrey;
+            color: white;
+            cursor: pointer;
+        }
+        .ketqua{
+            width: 200px;
+            background-color: dimgray;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+<form>
+  <table>
+      <tr>
+          <th colspan="4">
+             <p id="ketqua"></p>
+          </th>
+      </tr>
+      <tr>
+          <td><input onclick="number1()" type="button" value="1"></td>
+          <td><input onclick="number2()" type="button" value="2"></td>
+          <td><input type="button" value="3"></td>
+          <td><input type="button" value="+"></td>
+      </tr>
+      <tr>
+          <td><input type="button" value="4"></td>
+          <td><input type="button" value="5"></td>
+          <td><input type="button" value="6"></td>
+          <td><input type="button" value="-"></td>
+      </tr>
+      <tr>
+          <td><input type="button" value="7"></td>
+          <td><input type="button" value="8"></td>
+          <td><input type="button" value="9"></td>
+          <td><input type="button" value="*"></td>
+      </tr>
+      <tr>
+          <td><input type="button" value="0"></td>
+          <td><input type="reset" value="C"></td>
+          <td><input type="button" value="="></td>
+          <td><input type="button" value="/"></td>
+      </tr>
+  </table>
+    <p id="abc"></p>
+</form>
+</body>
+<script>
+    function number1() {
+        document.getElementById("ketqua").innerHTML = 1;
+    }
+
+
+</script>
+</html>

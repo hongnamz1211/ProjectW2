@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+<script>
+    phisics = prompt("Nhập điểm Lý: ");
+    chemistry = prompt("Nhập điểm Hóa: ");
+    biological = prompt("Nhập điểm Sinh: ");
+    let ly = parseFloat(phisics);
+    let hoa = parseFloat(chemistry);
+    let sinh = parseFloat(biological);
+    let sum = ly + hoa + sinh;
+    let average = sum/3;
+    document.write("Điểm tổng 3 môn: " + phisics "; Điểm trung bình 3 môn: " + average );
+
+</script>
+</body>
+</html>

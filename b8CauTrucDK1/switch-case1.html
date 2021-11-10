@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Switch-case 1</title>
+</head>
+<body>
+<script>
+    let browser = prompt("Nhập Edge: ");
+    switch (browser) {
+        case "Edge":
+            alert("You're got the Edge");
+            break;
+        case "Chorme":
+        case "Firefox":
+        case "Safari":
+        case "Opera":
+            alert("Okay we support these browsers too");
+            break;
+        default:
+            alert("We hope that this page look ok!");
+    }
+
+    // let browser = prompt("Nhập Edge: ");
+    // if (browser == "Edge") {
+    //     alert("You're got the Edge");
+    // } else if (browser == "Chorme" || browser == "Firefox" || browser == "Safari" || browser == "Opera") {
+    //     alert("Okay we support these browsers too");
+    // } else {
+    //     alert("We hope that this page look ok!");
+    // }
+</script>
+</body>
+</html>

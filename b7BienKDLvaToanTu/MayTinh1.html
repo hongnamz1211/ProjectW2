@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <td colspan="2">
+                <label for="ketqua1"><input id="ketqua1" type="text"></label>
+            </td>
+            <td colspan="2">
+                <label for="ketqua2"><input id="ketqua2" type="text"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input onclick="add1()" type="button" value="Addition (+)">
+            </td>
+            <td>
+                <input onclick="add2()" type="button" value="Subtraction (-)">
+            </td>
+            <td>
+                <input onclick="add3()" type="button" value="Multiplication (*)">
+            </td>
+            <td>
+                <input onclick="add4()" type="button" value="Division (/)">
+            </td>
+        </tr>
+    </table>
+    <h2>Result: <span id="result" ></span></h2>
+</form>
+</body>
+<script>
+    function add1() {
+        let ketqua1 = +document.getElementById("ketqua1").value
+        let ketqua2 = +document.getElementById("ketqua2").value
+        document.getElementById("result").innerText = ketqua1 + ketqua2
+    }
+    function add2() {
+        let ketqua1 = +document.getElementById("ketqua1").value
+        let ketqua2 = +document.getElementById("ketqua2").value
+        document.getElementById("result").innerText = ketqua1 - ketqua2
+    }
+    function add3() {
+        let ketqua1 = +document.getElementById("ketqua1").value
+        let ketqua2 = +document.getElementById("ketqua2").value
+        document.getElementById("result").innerText = ketqua1 * ketqua2
+    }
+    function add4() {
+        let ketqua1 = +document.getElementById("ketqua1").value
+        let ketqua2 = +document.getElementById("ketqua2").value
+        document.getElementById("result").innerText = ketqua1 / ketqua2
+    }
+</script>
+</html>
