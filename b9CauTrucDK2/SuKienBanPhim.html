@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện bàn phím</title>
+</head>
+<body onload="docReady()">
+<img id="nobita" style="width: 200px; position: absolute; left: 0; top: 0" src="https://media.vov.vn/uploaded/fuxpgqubk/2018_05_13/gd18_styleguide2_kanpan_v2_nobi_copy_tbyb.jpg" alt="Nobita">
+<script>
+  function upArrowPressed() {
+    let element = document.getElementById('nobita');
+    element.style.top = parseInt(element.style.top) - 5 + 'px';
+  }
+  function downArrowPressed() {
+    let element = document.getElementById('nobita');
+    element.style.top = parseInt(element.style.top) + 5 + 'px';
+  }
+  function leftArrowPressed() {
+    let element = document.getElementById('nobita');
+    element.style.left = parseInt(element.style.left) - 5 + 'px';
+  }
+  function rightArrowPressed() {
+    let element = document.getElementById('nobita');
+    element.style.left = parseInt(element.style.left) + 50 + 'px';
+  }
+
+  function moveSelection(evt) {
+    switch (evt.keyCode) {
+      case 38:
+        upArrowPressed();
+        break;
+      case 39:
+        rightArrowPressed();
+        break;
+      case 40:
+        downArrowPressed();
+        break;
+      case 37:
+        leftArrowPressed();
+        break;
+    }
+  }
+
+  function docReady() {
+    window.addEventListener('keydown', moveSelection);
+  }
+</script>
+</body>
+</html>

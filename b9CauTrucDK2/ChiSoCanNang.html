@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số cân nặng</title>
+</head>
+<body>
+<script>
+    let weight = +prompt('Nhập số kg của bạn: ', 'kg');
+    let height = +prompt('Nhập chiều cao của bạn: ' , 'cm');
+    BMT = weight / (height ** 2);
+    bmt = BMT < 18.5 ? "Underweight" : BMT < 25.0 ? "Normal" : BMT < 30.0 ? "Overweight" : "Obese";
+    alert(bmt);
+
+    // let weight = +prompt('Nhập số kg của bạn: ', 'kg');
+    // let height = +prompt('Nhập chiều cao của bạn: ' , 'cm');
+    // BMT = weight / (height ** 2);
+    //  if (BMT < 18.5) {
+    //      alert("Underweight");
+    //  } else if (BMT < 25.0) {
+    //      alert("Normal");
+    //  } else if (BMT < 30.0)  {
+    //      alert("Overweight");
+    //  } else {
+    //      alert("Obese")
+    //  }
+</script>
+</body>
+</html>

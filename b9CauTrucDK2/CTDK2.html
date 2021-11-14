@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTDK2</title>
+</head>
+<body>
+<script>
+    // // Bai1
+    // let doC = parseFloat(prompt("Nhập giá trị độ C"));
+    // doF = doC * 9 / 5 + 32;
+    // alert("Giá trị độ F: " + doF);
+
+    // // Bai2
+    // let met = parseFloat(prompt("Nhập chiều dài (m)"));
+    // ft = met * 3.2808;
+    // alert("Chiều dài đơn vị feet: " + ft);
+
+    // // Bai3
+    // let canhA = parseFloat(prompt("Nhập chiều dài cạnh hình vuông"));
+    // dientich = canhA ** 2;
+    // alert(dientich)
+
+    // // Bai4
+    // let canhA = parseFloat(prompt("Nhập chiều dài hình chữ nhật"));
+    // let canhB = parseFloat(prompt("Nhập chiều rộng hình chữ nhật"));
+    // dientich = canhA * canhB;
+    // alert(dientich);
+
+    // // Bai5
+    // let canhA = parseFloat(prompt("Nhập cạnh A hình vuông"));
+    // let canhB = parseFloat(prompt("Nhập cạnh B hình vuông"));
+    // dientich = 0.5 * canhA * canhB;
+    // alert(dientich)
+
+    // // Bai6
+    // let giatriB = parseFloat(prompt("Nhập giá trị B của phương trình Bx + C = 0"));
+    // let giatriC = parseFloat(prompt("Nhập giá trị C của phương trình Bx + C = 0"));
+    // giatriX = - giatriC / giatriB;
+    // alert("Giá trị X" + giatriX)
+
+    // // Bai8
+    // let tuoi = +prompt("Nhập số tuổi của bạn");
+    // if (tuoi < 120 && tuoi > 0) {
+    //     alert("Bạn là con người");
+    // } else {
+    //     alert("Bạn không phải con người");
+    // }
+
+    // // Bai9
+    // let canhA = parseFloat(prompt("Nhập cạnh a"));
+    // let canhB = parseFloat(prompt("Nhập cạnh b"));
+    // let canhC = parseFloat(prompt("Nhập cạnh c"));
+    //
+    // if (canhA > 0 && canhB > 0 && canhC > 0) {
+    //     if (canhA + canhB > canhC) {
+    //         if (canhA + canhC > canhB) {
+    //             if (canhB + canhC > canhA) {
+    //                 alert("Cạnh a, b, c là 3 cạnh tam giác");
+    //             } else {
+    //                 alert("Cạnh a, b, c không là 3 cạnh tam giác");
+    //             }
+    //         } else {
+    //             alert("Cạnh a, b, c không là 3 cạnh tam giác");
+    //         }
+    //     } else {
+    //         alert("Cạnh a, b, c không là 3 cạnh tam giác");
+    //     }
+    // } else {
+    //     alert("Cạnh a, b, c không là 3 cạnh tam giác");
+    // }
+
+    // // Bai10
+    // let sodien = +prompt("Nhập số điện sử dụng");
+    // let bac1 = 50 * 1678; //0-50
+    // let bac2 = 50 * 1734; //51-100
+    // let bac3 = 100 * 2014; //101-200
+    // let bac4 = 100 * 2536; //201-300
+    // let bac5 = 100 * 2834; //301-400
+    //
+    // if (sodien > 0 && sodien <50) {
+    //     alert("Giá điện: " + sodien * 1678 + " VNĐ");
+    // } else if (sodien < 100) {
+    //     alert("Giá điện: " + (bac1 + (sodien - 50) * 1734) + " VNĐ");
+    // } else if (sodien < 200) {
+    //     alert("Giá điện: " + (bac1 + bac2 + (sodien - 100) * 2014) + "VNĐ");
+    // } else if (sodien < 300) {
+    //     alert("Giá điện: " + (bac1 + bac2 + bac3 + (sodien -200) * 2536) + "VNĐ");
+    // } else if (sodien < 400) {
+    //     alert("Giá điện: " + (bac1 + bac2 + bac3 + bac4 + (sodien -300) * 2834) + "VNĐ");
+    // } else {
+    //     alert("Giá điện: " + (bac1 + bac2 + bac3 + bac4 + bac5 + (sodien - 400) * 2927) + "VNĐ");
+    // }
+
+    // // Bai11
+    // let money = +prompt("Nhập thu nhập của bạn");
+    // let bac1 = money * 0.05;
+    // let bac2 = money * 0.10 - 250000;
+    // let bac3 = money * 0.15 - 750000;
+    // let bac4 = money * 0.20 - 1650000;
+    // let bac5 = money * 0.25 - 3250000;
+    //
+    // if (money < 5000000 && money > 0) {
+    //     alert("Thuế phải đóng: " + bac1 + " VNĐ");
+    // } else if (money < 10000000) {
+    //     alert("Thuế phải đóng: " + bac2 + " VNĐ");
+    // } else if (money < 18000000) {
+    //     alert("Thuế phải đóng: " + bac3 + " VNĐ");
+    // }else if (money < 32000000) {
+    //     alert("Thuế phải đóng: " + bac4 + " VNĐ");
+    // }else {
+    //     alert("Thuế phải đóng: " + bac5 + " VNĐ");
+    // }
+
+    // Bai12
+    let money = prompt("Nhập số tiền bạn muốn vay");
+    let month = prompt("Nhập số tháng bạn muốn vay(Lãi tính theo tháng)");
+
+    alert("Số lãi phải trả là: " + (money * (Math.pow(1.02,month)) - money ) + " VNĐ");
+</script>
+</body>
+</html>
