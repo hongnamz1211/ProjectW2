@@ -7,22 +7,23 @@
         table, td, th, tr {
             border: 1px solid;
             border-collapse: collapse;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 <script>
-    // let num;
-    // num = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
-    // for (let i = 1; i <= 10; i++) {
-    //     num = num + "<tr>";
-    //     for (let j = 1; j <= 10; j++) {
-    //         num = + num + "<td>" + i * j + "</td>";
-    //     }
-    //     num = num + "</tr>";
-    // }
-    // num = num + "</table>";
-    // document.write(num);
+    let num;
+    num = "<table border='1px' width='300px' cellspacing='0px' cellpadding='3px'>"
+    for (let i = 1; i <= 10; i++) {
+        num = num + "<tr>";
+        for (let j = 1; j <= 10; j++) {
+            num = num + "<td>" + i * j + "</td>";
+        }
+        num = num + "</tr>";
+    }
+    num = num + "</table>";
+    document.write(num);
 
 </script>
 </body>
